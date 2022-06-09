@@ -2,23 +2,42 @@
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.table {
+  margin: 2rem 0;
+}
+
+.para-container {
+  margin: 2.5rem 0;
+}
+
 body {
   margin: auto;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
+  background: linear-gradient(to top, #ffffff, #9198e5);
 }
 
 .img-cl {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
 }
 
 img {
-  width: 120px;
-  height: 120px;
-
+  width: 240px;
+  height: 240px;
 }
 
 footer {
@@ -28,7 +47,6 @@ footer {
   box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 }
 
-
 footer p {
   text-align: center;
   padding: 20px;
@@ -37,31 +55,30 @@ footer p {
   text-transform: uppercase;
 }
 
-
 .links {
-  margin-right: 6rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .links-ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  padding: 0;
 }
 
 li {
-  margin-left: 5rem;
   list-style: none;
 }
 
-li>a {
+li > a {
   text-decoration: none;
   color: #004c99;
-  padding: 20px;
+  padding: 10px;
 }
 
-li>a:hover {
+li > a:hover {
   color: #a60042;
   font-weight: bolder;
   background-color: #004c99;
@@ -70,4 +87,19 @@ li>a:hover {
 
 p {
   text-align: justify;
+}
+
+a {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  li {
+    margin-left: 1.5rem;
+  }
 }
